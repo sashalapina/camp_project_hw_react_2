@@ -15,6 +15,7 @@
   background-color: #fff;
   box-shadow: 0 9px 21px 0 rgba(32, 31, 41, 0.15);
   cursor: pointer;
+  margin-bottom: 16px;
 }
 
 .get-posts-btn:hover {

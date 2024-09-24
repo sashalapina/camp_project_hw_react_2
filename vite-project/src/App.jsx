@@ -22,8 +22,8 @@ function App() {
 
   return (
     <>
-    <button className='get-posts-btn' onClick={handleButtonClick}>Click to get posts</button>
-    {posts.length && <PostListAfetrClick posts={posts} />}
+      <button className='get-posts-btn' onClick={handleButtonClick}>Click to fetch posts by click</button>
+      {posts.length && <PostListAfetrClick posts={posts} />}
     </>
   )
 }
