@@ -1,0 +1,29 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.get-posts-btn {
+  font-family: 'Nunito', sans-serif;
+  text-transform: uppercase;
+  font-weight: 600;
+  border: none;
+  border-radius: 10px;
+  padding: 15px;
+  background-color: #fff;
+  box-shadow: 0 9px 21px 0 rgba(32, 31, 41, 0.15);
+  cursor: pointer;
+}
+
+.get-posts-btn:hover {
+  outline: 2px solid #f6f6f6;
+  box-shadow: 0 9px 21px 0 rgba(32, 31, 41, 0.3);
+}
+
+.get-posts-btn:active {
+  background-color: #f6f6f6;
+  outline: 2px solid #f6f6f6;
+  box-shadow: 0 9px 21px 0 rgba(32, 31, 41, 0.3);
+}
