@@ -22,7 +22,8 @@ function App() {
 
   return (
     <>
-    {posts.length ? (<PostListAfetrClick posts={posts} />) : (<button className='get-posts-btn' onClick={handleButtonClick}>Click to get posts</button>)}
+    <button className='get-posts-btn' onClick={handleButtonClick}>Click to get posts</button>
+    {posts.length && <PostListAfetrClick posts={posts} />}
     </>
   )
 }
