@@ -1,7 +1,11 @@
 import { useEffect, useState } from 'react'
-import { PostListAfetrClick } from './components/PostList'
+import { PostListAfetrClick } from './components/PostsList/PostList'
+import { LanguageProvider } from './components/LanguageSwitcher/LanguageContext'
+import LanguageSwitcher from './components/LanguageSwitcher/LanguageSwitcher'
+
 import './App.css'
-import './Posts.css'
+import './components/PostsList/Posts.css'
+import './components/LanguageSwitcher/LanguageSwitcher.css'
 
 function App() {
   const [posts, setPosts] = useState([])
@@ -22,6 +26,12 @@ function App() {
 
   return (
     <>
+      <LanguageProvider>
+        <div>
+          <LanguageSwitcher />
+        </div>
+      </LanguageProvider>
+
       <button className='get-posts-btn' onClick={handleButtonClick}>Click to fetch posts by click</button>
       {posts.length && <PostListAfetrClick posts={posts} />}
     </>

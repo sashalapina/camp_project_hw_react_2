@@ -1,0 +1,33 @@
+.language-switcher-container {
+    background-color: #fff;
+    box-shadow: 0 9px 21px 0 rgba(32, 31, 41, 0.15);
+    border-radius: 10px;
+    width: fit-content;
+    padding: 15px;
+    justify-self: end;
+    background-image: url(./flag-for-flag-united-kingdom-svgrepo-com.svg);
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: top right;
+    margin: 0 0 16px auto;
+}
+
+.language-switcher-container p {
+    margin: 0 0 15px;
+}
+
+.language-select {
+    font-family: 'Nunito', sans-serif;
+    width: 200px;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+.language-select option {
+    padding-left: 30px;
+    font-family: 'Nunito', sans-serif;
+    background-repeat: no-repeat;
+    background-position: left center;
+}
