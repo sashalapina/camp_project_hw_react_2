@@ -33,7 +33,7 @@ function App() {
       </LanguageProvider>
 
       <button className='get-posts-btn' onClick={handleButtonClick}>Click to fetch posts by click</button>
-      {posts.length && <PostListAfetrClick posts={posts} />}
+      {!!posts.length && <PostListAfetrClick posts={posts} />}
     </>
   )
 }
