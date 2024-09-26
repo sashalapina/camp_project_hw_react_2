@@ -27,13 +27,11 @@ function App() {
   return (
     <>
       <LanguageProvider>
-        <div>
-          <LanguageSwitcher />
-        </div>
+        <LanguageSwitcher />
+        
+        <button className='get-posts-btn' onClick={handleButtonClick}>Click to fetch posts by click</button>
+        {!!posts.length && <PostListAfetrClick posts={posts} />}
       </LanguageProvider>
-
-      <button className='get-posts-btn' onClick={handleButtonClick}>Click to fetch posts by click</button>
-      {!!posts.length && <PostListAfetrClick posts={posts} />}
     </>
   )
 }
